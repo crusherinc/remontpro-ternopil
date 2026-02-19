@@ -515,6 +515,132 @@ function initPortfolioCards() {
 }
 
 /* ============================================================
+   TESTIMONIALS SLIDER
+============================================================ */
+function initTestimonialsSlider() {
+  const slider = document.querySelector('.testimonials-slider');
+  if (!slider) return;
+
+  const track = slider.querySelector('.testimonials-track');
+  const cards = [...slider.querySelectorAll('.testimonial-card')];
+  const dotsContainer = slider.querySelector('.slider-dots');
+  const prevBtn = slider.querySelector('.slider-prev');
+  const nextBtn = slider.querySelector('.slider-next');
+
+  if (!track || !cards.length) return;
+
+  let currentIndex = 0;
+  let visibleCount = getVisibleCount();
+  let maxIndex = Math.max(0, cards.length - visibleCount);
+  let autoInterval = null;
+
+  function getVisibleCount() {
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 640) return 2;
+    return 1;
+  }
+
+  function setCardWidths() {
+    const containerWidth = track.parentElement.offsetWidth;
+    const gap = 24;
+    const cardWidth = (containerWidth - gap * (visibleCount - 1)) / visibleCount;
+    cards.forEach(card => { card.style.width = cardWidth + 'px'; });
+  }
+
+  function getOffset() {
+    const containerWidth = track.parentElement.offsetWidth;
+    const gap = 24;
+    const cardWidth = (containerWidth - gap * (visibleCount - 1)) / visibleCount;
+    return currentIndex * (cardWidth + gap);
+  }
+
+  function goTo(index) {
+    currentIndex = Math.max(0, Math.min(index, maxIndex));
+    track.style.transform = `translateX(-${getOffset()}px)`;
+    updateDots();
+    updateButtons();
+  }
+
+  function updateDots() {
+    if (!dotsContainer) return;
+    [...dotsContainer.querySelectorAll('.slider-dot')].forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  function updateButtons() {
+    if (prevBtn) prevBtn.disabled = currentIndex === 0;
+    if (nextBtn) nextBtn.disabled = currentIndex >= maxIndex;
+  }
+
+  function buildDots() {
+    if (!dotsContainer) return;
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i <= maxIndex; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Слайд ${i + 1}`);
+      dot.addEventListener('click', () => { goTo(i); resetAuto(); });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function startAuto() {
+    autoInterval = setInterval(() => {
+      goTo(currentIndex >= maxIndex ? 0 : currentIndex + 1);
+    }, 5000);
+  }
+
+  function resetAuto() {
+    clearInterval(autoInterval);
+    startAuto();
+  }
+
+  function init() {
+    visibleCount = getVisibleCount();
+    maxIndex = Math.max(0, cards.length - visibleCount);
+    setCardWidths();
+    buildDots();
+    goTo(0);
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => { goTo(currentIndex - 1); resetAuto(); });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => { goTo(currentIndex + 1); resetAuto(); });
+  }
+
+  // Touch swipe
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { goTo(diff > 0 ? currentIndex + 1 : currentIndex - 1); resetAuto(); }
+  }, { passive: true });
+
+  window.addEventListener('resize', debounce(() => {
+    const newVisible = getVisibleCount();
+    if (newVisible !== visibleCount) {
+      visibleCount = newVisible;
+      maxIndex = Math.max(0, cards.length - visibleCount);
+      setCardWidths();
+      buildDots();
+      goTo(Math.min(currentIndex, maxIndex));
+    } else {
+      setCardWidths();
+      goTo(currentIndex);
+    }
+  }, 200));
+
+  slider.addEventListener('mouseenter', () => clearInterval(autoInterval));
+  slider.addEventListener('mouseleave', startAuto);
+
+  init();
+  startAuto();
+}
+
+/* ============================================================
    INIT ALL
 ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -532,6 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardRipple();
   initPortfolioCards();
   initCtaPulse();
+  initTestimonialsSlider();
 
   console.log('%c🏗 РемПро Тернопіль — сайт ініціалізовано', 'color:#E8701A;font-weight:700;font-size:14px');
 });
