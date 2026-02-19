@@ -1762,10 +1762,17 @@ p { color: var(--text); }
     padding: 12px 24px;
   }
 
-  .nav-toggle { display: flex; z-index: 1000; position: relative; }
+  .nav-inner { gap: 8px; }
 
+  .brand-icon { width: 36px; height: 36px; font-size: 16px; }
+  .brand-name { font-size: 16px; }
+  .brand-city { font-size: 9px; }
+
+  .nav-toggle { display: flex; z-index: 1000; position: relative; margin-right: 4px; }
+
+  .nav-actions { gap: 8px; }
   .btn-outline-nav span { display: none; }
-  .btn-outline-nav { padding: 10px 14px; }
+  .btn-outline-nav { padding: 9px 12px; }
 
   .hero-trust {
     flex-wrap: wrap;
