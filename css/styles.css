@@ -400,15 +400,21 @@ p { color: var(--text); }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #0A1E3A 0%, #1B3C6B 40%, #1E3F6F 70%, #0F2A50 100%);
+  background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-color: #0A1E3A;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 80% 50%, rgba(232,112,26,0.18) 0%, transparent 60%),
-    radial-gradient(ellipse at 10% 80%, rgba(244,193,54,0.08) 0%, transparent 50%);
+  background: linear-gradient(
+    135deg,
+    rgba(10,30,58,0.90) 0%,
+    rgba(27,60,107,0.82) 50%,
+    rgba(15,42,80,0.88) 100%
+  );
 }
 
 .blueprint-grid {
@@ -874,9 +880,27 @@ p { color: var(--text); }
   height: 280px;
   position: relative;
   cursor: pointer;
-  background: linear-gradient(135deg, var(--grad-1, var(--secondary)), var(--grad-2, var(--accent)));
+  background-color: var(--primary-dark);
+  background-size: cover;
+  background-position: center;
   transition: var(--t);
 }
+
+/* Subtle bottom gradient always visible so text area is readable */
+.portfolio-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(10,25,50,0.65), transparent);
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.portfolio-card:hover::after { opacity: 0; }
 
 .portfolio-card:hover {
   transform: translateY(-4px);
@@ -884,32 +908,25 @@ p { color: var(--text); }
 }
 
 .portfolio-visual {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.25);
-  transition: var(--t);
+  display: none;
 }
-
-.portfolio-card:hover .portfolio-visual { opacity: 0; }
 
 .portfolio-overlay {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background: linear-gradient(
     to top,
-    rgba(15,34,64,0.95) 0%,
-    rgba(15,34,64,0.6) 50%,
+    rgba(10,25,55,0.97) 0%,
+    rgba(15,34,64,0.70) 45%,
     rgba(15,34,64,0) 100%
   );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 28px 24px;
-  transform: translateY(60px);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(55px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
   opacity: 0;
 }
 
