@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="РемПро Тернопіль — якісний ремонт квартир, будинків та комерційних приміщень у Тернополі. Гарантія 2 роки. Безкоштовний кошторис." />
+  <meta name="keywords" content="ремонт квартир Тернопіль, ремонт будинків, оздоблення, будівництво Тернопіль" />
+  <meta property="og:title" content="РемПро Тернопіль — Якісний Ремонт" />
+  <meta property="og:description" content="Ремонт квартир та будинків у Тернополі. Гарантія 2 роки." />
+  <meta property="og:type" content="website" />
+  <title>РемПро Тернопіль — Ремонт Квартир та Будинків</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION
+  ============================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-icon"><i class="fas fa-hard-hat"></i></div>
+        <div class="brand-text">
+          <span class="brand-name">РемПро</span>
+          <span class="brand-city">Тернопіль</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Головне меню">
+        <a href="#services" class="nav-link">Послуги</a>
+        <a href="#portfolio" class="nav-link">Портфоліо</a>
+        <a href="#about" class="nav-link">Про нас</a>
+        <a href="#testimonials" class="nav-link">Відгуки</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Контакти</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+380501234567" class="btn btn-outline-nav">
+          <i class="fas fa-phone"></i>
+          <span>+380 50 123 45 67</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================
+       HERO
+  ============================== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="blueprint-grid"></div>
+      <div class="geo-shape geo-1"></div>
+      <div class="geo-shape geo-2"></div>
+      <div class="geo-shape geo-3"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal-up">
+        <i class="fas fa-medal"></i>
+        <span>Найкраща будівельна компанія Тернополя 2024</span>
+      </div>
+
+      <h1 class="hero-title reveal-up" style="--delay: 0.1s">
+        Ремонт вашої<br>
+        <span class="text-gradient">мрії</span> — реально
+      </h1>
+
+      <p class="hero-subtitle reveal-up" style="--delay: 0.2s">
+        Якісний ремонт квартир, будинків та комерційних приміщень у Тернополі.<br>
+        Фіксована ціна. Гарантія <strong>2 роки</strong>. Безкоштовна консультація.
+      </p>
+
+      <div class="hero-cta reveal-up" style="--delay: 0.3s">
+        <a href="#contact" class="btn btn-secondary btn-lg">
+          <i class="fas fa-calculator"></i>
+          Отримати безкоштовний кошторис
+        </a>
+        <a href="#portfolio" class="btn btn-outline-white btn-lg">
+          <i class="fas fa-images"></i>
+          Наші роботи
+        </a>
+      </div>
+
+      <div class="hero-trust reveal-up" style="--delay: 0.4s">
+        <div class="trust-item">
+          <span class="trust-number">15+</span>
+          <span class="trust-label">Років досвіду</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-number">500+</span>
+          <span class="trust-label">Завершених проектів</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-number">98%</span>
+          <span class="trust-label">Задоволених клієнтів</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-number">2 роки</span>
+          <span class="trust-label">Гарантія на роботи</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SERVICES (Tabs + Cards)
+  ============================== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Послуги</div>
+        <h2 class="section-title">Що ми пропонуємо</h2>
+        <p class="section-subtitle">Комплексний підхід до ремонту будь-якого об'єкту — від дизайну до здачі ключів</p>
+      </div>
+
+      <!-- TABS NAV -->
+      <div class="tabs-wrapper reveal-up">
+        <div class="tabs-nav" role="tablist" data-group="services">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="apartments" data-group="services">
+            <i class="fas fa-building"></i> Квартири
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="houses" data-group="services">
+            <i class="fas fa-home"></i> Будинки
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="commercial" data-group="services">
+            <i class="fas fa-store"></i> Комерційні приміщення
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="separate" data-group="services">
+            <i class="fas fa-tools"></i> Окремі роботи
+          </button>
+        </div>
+
+        <!-- TAB: Квартири -->
+        <div class="tab-content active" id="tab-services-apartments" role="tabpanel">
+          <div class="cards-grid">
+            <div class="service-card reveal-up">
+              <div class="card-icon-wrap" style="--icon-color: #E8701A">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Комплексний ремонт</h3>
+              <p>Ремонт «під ключ» з нуля: демонтаж, чорнові та чистові роботи, дизайн-проект у подарунок.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Дизайн-проект включено</li>
+                <li><i class="fas fa-check"></i> Матеріали за кошторисом</li>
+                <li><i class="fas fa-check"></i> Гарантія 2 роки</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.1s">
+              <div class="card-icon-wrap" style="--icon-color: #2E5BA8">
+                <i class="fas fa-paint-roller"></i>
+              </div>
+              <h3>Косметичний ремонт</h3>
+              <p>Оновлення без капітального втручання: фарба, шпалери, стеля, підлога. Швидко та якісно.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Строки від 5 днів</li>
+                <li><i class="fas fa-check"></i> Мінімальна запиленість</li>
+                <li><i class="fas fa-check"></i> Чистовий прибиранн після</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.2s">
+              <div class="card-icon-wrap" style="--icon-color: #27AE60">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <h3>Ремонт кухні</h3>
+              <p>Монтаж кухонних гарнітурів, укладання плитки, підключення техніки та сантехніки.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> 3D-візуалізація</li>
+                <li><i class="fas fa-check"></i> Мийка та змішувач включені</li>
+                <li><i class="fas fa-check"></i> Фартух з плитки</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.3s">
+              <div class="card-icon-wrap" style="--icon-color: #8E44AD">
+                <i class="fas fa-bath"></i>
+              </div>
+              <h3>Ремонт ванної кімнати</h3>
+              <p>Повна переробка: гідроізоляція, плитка, сантехніка, вентиляція, теплі підлоги.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Гідроізоляція обов'язково</li>
+                <li><i class="fas fa-check"></i> Тепла підлога за бажанням</li>
+                <li><i class="fas fa-check"></i> Нова сантехніка</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.4s">
+              <div class="card-icon-wrap" style="--icon-color: #E67E22">
+                <i class="fas fa-couch"></i>
+              </div>
+              <h3>Ремонт балкону</h3>
+              <p>Засклення, утеплення, зашивка пластиком або деревом, кладка плитки, підлога.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Металопластикові вікна</li>
+                <li><i class="fas fa-check"></i> Утеплення мінватою</li>
+                <li><i class="fas fa-check"></i> LED-підсвітка</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.5s">
+              <div class="card-icon-wrap" style="--icon-color: #16A085">
+                <i class="fas fa-drafting-compass"></i>
+              </div>
+              <h3>Дизайн інтер'єру</h3>
+              <p>Розробка авторського дизайн-проекту з 3D-візуалізацією та специфікацією матеріалів.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> 3D-рендеринг кімнат</li>
+                <li><i class="fas fa-check"></i> Підбір матеріалів</li>
+                <li><i class="fas fa-check"></i> Авторський нагляд</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: Будинки -->
+        <div class="tab-content" id="tab-services-houses" role="tabpanel">
+          <div class="cards-grid">
+            <div class="service-card reveal-up">
+              <div class="card-icon-wrap" style="--icon-color: #E8701A">
+                <i class="fas fa-key"></i>
+              </div>
+              <h3>Будівництво під ключ</h3>
+              <p>Повний цикл від фундаменту до оздоблення. Усі роботи власною бригадою без посередників.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Проект від архітектора</li>
+                <li><i class="fas fa-check"></i> Офіційний договір</li>
+                <li><i class="fas fa-check"></i> Гарантія на конструкції</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.1s">
+              <div class="card-icon-wrap" style="--icon-color: #2E5BA8">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>Фасадні роботи</h3>
+              <p>Утеплення фасаду, декоративна штукатурка, оздоблення клінкером або сайдингом.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Утеплення мінватою/пінопластом</li>
+                <li><i class="fas fa-check"></i> Декоративна штукатурка</li>
+                <li><i class="fas fa-check"></i> Клінкерна цегла</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.2s">
+              <div class="card-icon-wrap" style="--icon-color: #27AE60">
+                <i class="fas fa-house-damage"></i>
+              </div>
+              <h3>Покрівельні роботи</h3>
+              <p>Монтаж металочерепиці, ондуліну, гнучкої черепиці, ремонт та гідроізоляція покрівлі.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Всі типи покрівлі</li>
+                <li><i class="fas fa-check"></i> Водостічні системи</li>
+                <li><i class="fas fa-check"></i> Гарантія 5 років</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.3s">
+              <div class="card-icon-wrap" style="--icon-color: #8E44AD">
+                <i class="fas fa-thermometer-half"></i>
+              </div>
+              <h3>Утеплення будинку</h3>
+              <p>Утеплення стін, покрівлі, підлоги, встановлення вентильованого фасаду.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Енергоаудит</li>
+                <li><i class="fas fa-check"></i> Мінвата / пінополістирол</li>
+                <li><i class="fas fa-check"></i> Зниження витрат на опалення</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.4s">
+              <div class="card-icon-wrap" style="--icon-color: #E67E22">
+                <i class="fas fa-door-open"></i>
+              </div>
+              <h3>Внутрішнє оздоблення</h3>
+              <p>Штукатурка, гіпсокартон, підлоги, двері, вбудовані меблі та столярні вироби.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Будь-який стиль інтер'єру</li>
+                <li><i class="fas fa-check"></i> Гіпсова та цементна штукатурка</li>
+                <li><i class="fas fa-check"></i> Паркет, ламінат, плитка</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.5s">
+              <div class="card-icon-wrap" style="--icon-color: #16A085">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3>Ландшафтний дизайн</h3>
+              <p>Плануванн ділянки, доріжки, газони, клумби, альтанки та огорожі.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Проект ділянки</li>
+                <li><i class="fas fa-check"></i> Дренажна система</li>
+                <li><i class="fas fa-check"></i> Освітлення та полив</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: Комерційні -->
+        <div class="tab-content" id="tab-services-commercial" role="tabpanel">
+          <div class="cards-grid">
+            <div class="service-card reveal-up">
+              <div class="card-icon-wrap" style="--icon-color: #E8701A">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Офіси</h3>
+              <p>Сучасні офісні простори з відкритим плануванням, переговорними кімнатами та зонами відпочинку.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Open space та переговорні</li>
+                <li><i class="fas fa-check"></i> Корпоративний стиль</li>
+                <li><i class="fas fa-check"></i> Акустичні рішення</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.1s">
+              <div class="card-icon-wrap" style="--icon-color: #2E5BA8">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <h3>Магазини та кафе</h3>
+              <p>Атмосферні простори для роздрібної торгівлі, ресторанів та кав'ярень у Тернополі.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Вентиляція та витяжка</li>
+                <li><i class="fas fa-check"></i> Барна стійка та стелажі</li>
+                <li><i class="fas fa-check"></i> Відповідність санітарним нормам</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.2s">
+              <div class="card-icon-wrap" style="--icon-color: #27AE60">
+                <i class="fas fa-hospital"></i>
+              </div>
+              <h3>Медичні заклади</h3>
+              <p>Клініки, стоматологічні кабінети, аптеки з дотриманням усіх санітарних вимог.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Антибактеріальні покриття</li>
+                <li><i class="fas fa-check"></i> Відповідність МОЗ</li>
+                <li><i class="fas fa-check"></i> Вентиляція та кондиціонування</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.3s">
+              <div class="card-icon-wrap" style="--icon-color: #8E44AD">
+                <i class="fas fa-hotel"></i>
+              </div>
+              <h3>Готелі та хостели</h3>
+              <p>Від бюджетних хостелів до бутик-готелів — розробимо атмосферний інтер'єр.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Стійка ресепшн</li>
+                <li><i class="fas fa-check"></i> Номерний фонд</li>
+                <li><i class="fas fa-check"></i> Зони спільного користування</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.4s">
+              <div class="card-icon-wrap" style="--icon-color: #E67E22">
+                <i class="fas fa-warehouse"></i>
+              </div>
+              <h3>Склади та виробництво</h3>
+              <p>Промислові підлоги, перегородки, освітлення, вентиляція та пожежна безпека.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Промислові полімерні підлоги</li>
+                <li><i class="fas fa-check"></i> Сендвіч-панелі</li>
+                <li><i class="fas fa-check"></i> Системи безпеки</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.5s">
+              <div class="card-icon-wrap" style="--icon-color: #16A085">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <h3>Ресторани</h3>
+              <p>Авторські інтер'єри ресторанів з індивідуальним дизайном, що залучає гостей.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Кухонна зона з нержавійки</li>
+                <li><i class="fas fa-check"></i> Барна зона</li>
+                <li><i class="fas fa-check"></i> Декоративне освітлення</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: Окремі роботи -->
+        <div class="tab-content" id="tab-services-separate" role="tabpanel">
+          <div class="cards-grid">
+            <div class="service-card reveal-up">
+              <div class="card-icon-wrap" style="--icon-color: #E8701A">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3>Електромонтажні роботи</h3>
+              <p>Монтаж проводки, щитків, розеток, вимикачів, освітлення та «розумний дім».</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Схема електропостачання</li>
+                <li><i class="fas fa-check"></i> Сертифіковані матеріали</li>
+                <li><i class="fas fa-check"></i> Перевірка мегаомметром</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.1s">
+              <div class="card-icon-wrap" style="--icon-color: #2E5BA8">
+                <i class="fas fa-faucet"></i>
+              </div>
+              <h3>Сантехнічні роботи</h3>
+              <p>Монтаж труб, радіаторів, теплої підлоги, каналізації та сантехніки будь-якої складності.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Поліпропіленові труби</li>
+                <li><i class="fas fa-check"></i> Балансування системи</li>
+                <li><i class="fas fa-check"></i> Пресова фітинги</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.2s">
+              <div class="card-icon-wrap" style="--icon-color: #27AE60">
+                <i class="fas fa-fill-drip"></i>
+              </div>
+              <h3>Штукатурка та шпатлювання</h3>
+              <p>Гіпсова, цементна та декоративна штукатурка. Шпатлювання під фарбу та шпалери.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Маяки з рівня</li>
+                <li><i class="fas fa-check"></i> Гіпсова та цементна</li>
+                <li><i class="fas fa-check"></i> Фінішне шпатлювання</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.3s">
+              <div class="card-icon-wrap" style="--icon-color: #8E44AD">
+                <i class="fas fa-chess-board"></i>
+              </div>
+              <h3>Укладання плитки</h3>
+              <p>Керамічна плитка, керамограніт, мозаїка, природній камінь — підлога та стіни.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Любі розміри та формати</li>
+                <li><i class="fas fa-check"></i> Фігурна порізка</li>
+                <li><i class="fas fa-check"></i> Теплі підлоги під плитку</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.4s">
+              <div class="card-icon-wrap" style="--icon-color: #E67E22">
+                <i class="fas fa-border-all"></i>
+              </div>
+              <h3>Підлогові покриття</h3>
+              <p>Монтаж ламінату, паркету, вінілового покриття, лінолеуму та самовирівнюючої стяжки.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Стяжка та підкладка</li>
+                <li><i class="fas fa-check"></i> Ламінат, паркетна дошка</li>
+                <li><i class="fas fa-check"></i> Вінілова плитка LVT</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+            <div class="service-card reveal-up" style="--delay:0.5s">
+              <div class="card-icon-wrap" style="--icon-color: #16A085">
+                <i class="fas fa-vector-square"></i>
+              </div>
+              <h3>Гіпсокартонні роботи</h3>
+              <p>Монтаж перегородок, підвісних стель, арок, ніш та декоративних елементів з ГКЛ.</p>
+              <ul class="card-features">
+                <li><i class="fas fa-check"></i> Будь-яка складність стель</li>
+                <li><i class="fas fa-check"></i> Ніші та полиці</li>
+                <li><i class="fas fa-check"></i> LED-підсвітка</li>
+              </ul>
+              <a href="#contact" class="btn btn-card">Замовити</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       STATS
+  ============================== -->
+  <section class="section-stats">
+    <div class="container stats-grid">
+      <div class="stat-item reveal-up">
+        <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+        <div class="stat-number" data-count="15">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label">Років досвіду</div>
+      </div>
+      <div class="stat-item reveal-up" style="--delay:0.1s">
+        <div class="stat-icon"><i class="fas fa-home"></i></div>
+        <div class="stat-number" data-count="500">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label">Завершених проектів</div>
+      </div>
+      <div class="stat-item reveal-up" style="--delay:0.2s">
+        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+        <div class="stat-number" data-count="98">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Задоволених клієнтів</div>
+      </div>
+      <div class="stat-item reveal-up" style="--delay:0.3s">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-number" data-count="35">0</div>
+        <div class="stat-suffix"></div>
+        <div class="stat-label">Фахівців у команді</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       WHY US / ABOUT
+  ============================== -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Переваги</div>
+        <h2 class="section-title">Чому обирають РемПро</h2>
+        <p class="section-subtitle">Ми будуємо не просто ремонт — ми будуємо довіру</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal-up">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3>Безкоштовний кошторис</h3>
+          <p>Замірюємо об'єкт і надаємо детальний кошторис протягом 24 годин. Повністю безкоштовно та без зобов'язань.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:0.1s">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>Фіксована ціна</h3>
+          <p>Підписуємо договір з фіксованою вартістю. Жодних прихованих доплат та несподіваних витрат у процесі роботи.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:0.2s">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Гарантія 2 роки</h3>
+          <p>Даємо офіційну гарантію на всі виконані роботи. У разі виникнення проблем — усуваємо безкоштовно.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:0.3s">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-hard-hat"></i>
+          </div>
+          <h3>Власна бригада</h3>
+          <p>Немає субпідрядників. Усі роботи виконує наша власна, перевірена бригада сертифікованих фахівців.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:0.4s">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3>Поетапний контроль</h3>
+          <p>Надсилаємо фотозвіти щоденно. Ви завжди знаєте, що відбувається на вашому об'єкті.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:0.5s">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>Чіткі строки</h3>
+          <p>Дотримуємося дедлайнів. Пеня за кожен день прострочення передбачена договором.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PORTFOLIO (Tabs + Cards)
+  ============================== -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Портфоліо</div>
+        <h2 class="section-title">Наші роботи</h2>
+        <p class="section-subtitle">Реалізовані проекти у Тернополі та Тернопільській області</p>
+      </div>
+
+      <div class="tabs-wrapper reveal-up">
+        <div class="tabs-nav" role="tablist" data-group="portfolio">
+          <button class="tab-btn active" role="tab" data-tab="all" data-group="portfolio">
+            <i class="fas fa-th"></i> Всі проекти
+          </button>
+          <button class="tab-btn" role="tab" data-tab="apt" data-group="portfolio">
+            <i class="fas fa-building"></i> Квартири
+          </button>
+          <button class="tab-btn" role="tab" data-tab="house" data-group="portfolio">
+            <i class="fas fa-home"></i> Будинки
+          </button>
+          <button class="tab-btn" role="tab" data-tab="comm" data-group="portfolio">
+            <i class="fas fa-store"></i> Комерційні
+          </button>
+        </div>
+
+        <!-- ALL projects -->
+        <div class="tab-content active" id="tab-portfolio-all" role="tabpanel">
+          <div class="portfolio-grid">
+            <div class="portfolio-card reveal-up" style="--grad-1:#E8701A;--grad-2:#F4C136" data-category="apt">
+              <div class="portfolio-visual"><i class="fas fa-couch fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Квартира</span>
+                <h4>Комплексний ремонт 3-кімнатної квартири</h4>
+                <p>85 м² · вул. Степана Бандери, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#2E5BA8;--grad-2:#1B3C6B;--delay:0.1s" data-category="house">
+              <div class="portfolio-visual"><i class="fas fa-home fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Будинок</span>
+                <h4>Будівництво будинку під ключ</h4>
+                <p>180 м² · Тернопільський район</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#27AE60;--grad-2:#1E8449;--delay:0.2s" data-category="apt">
+              <div class="portfolio-visual"><i class="fas fa-utensils fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Кухня</span>
+                <h4>Дизайнерська кухня в стилі loft</h4>
+                <p>18 м² · пр. Злуки, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#8E44AD;--grad-2:#6C3483;--delay:0.3s" data-category="comm">
+              <div class="portfolio-visual"><i class="fas fa-coffee fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Кав'ярня</span>
+                <h4>Кав'ярня «Затишок» — дизайн та ремонт</h4>
+                <p>65 м² · центр міста, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#E67E22;--grad-2:#CA6F1E;--delay:0.4s" data-category="apt">
+              <div class="portfolio-visual"><i class="fas fa-bath fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Ванна кімната</span>
+                <h4>Ванна кімната в мармуровому стилі</h4>
+                <p>8 м² · вул. Руська, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#16A085;--grad-2:#0E6655;--delay:0.5s" data-category="comm">
+              <div class="portfolio-visual"><i class="fas fa-briefcase fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Офіс</span>
+                <h4>IT-офіс у стилі high-tech</h4>
+                <p>120 м² · ТРЦ «Магнолія», Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- APT only -->
+        <div class="tab-content" id="tab-portfolio-apt" role="tabpanel">
+          <div class="portfolio-grid">
+            <div class="portfolio-card reveal-up" style="--grad-1:#E8701A;--grad-2:#F4C136">
+              <div class="portfolio-visual"><i class="fas fa-couch fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Квартира</span>
+                <h4>Комплексний ремонт 3-кімнатної квартири</h4>
+                <p>85 м² · вул. Степана Бандери, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#27AE60;--grad-2:#1E8449;--delay:0.1s">
+              <div class="portfolio-visual"><i class="fas fa-utensils fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Кухня</span>
+                <h4>Дизайнерська кухня в стилі loft</h4>
+                <p>18 м² · пр. Злуки, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#E67E22;--grad-2:#CA6F1E;--delay:0.2s">
+              <div class="portfolio-visual"><i class="fas fa-bath fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Ванна кімната</span>
+                <h4>Ванна кімната в мармуровому стилі</h4>
+                <p>8 м² · вул. Руська, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOUSE only -->
+        <div class="tab-content" id="tab-portfolio-house" role="tabpanel">
+          <div class="portfolio-grid">
+            <div class="portfolio-card reveal-up" style="--grad-1:#2E5BA8;--grad-2:#1B3C6B">
+              <div class="portfolio-visual"><i class="fas fa-home fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Будинок</span>
+                <h4>Будівництво будинку під ключ</h4>
+                <p>180 м² · Тернопільський район</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#16A085;--grad-2:#0E6655;--delay:0.1s">
+              <div class="portfolio-visual"><i class="fas fa-thermometer-half fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Утеплення</span>
+                <h4>Фасадне утеплення приватного будинку</h4>
+                <p>210 м² · с. Осовці, Тернопільська обл.</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMMERCIAL only -->
+        <div class="tab-content" id="tab-portfolio-comm" role="tabpanel">
+          <div class="portfolio-grid">
+            <div class="portfolio-card reveal-up" style="--grad-1:#8E44AD;--grad-2:#6C3483">
+              <div class="portfolio-visual"><i class="fas fa-coffee fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Кав'ярня</span>
+                <h4>Кав'ярня «Затишок» — дизайн та ремонт</h4>
+                <p>65 м² · центр міста, Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+            <div class="portfolio-card reveal-up" style="--grad-1:#16A085;--grad-2:#0E6655;--delay:0.1s">
+              <div class="portfolio-visual"><i class="fas fa-briefcase fa-3x"></i></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Офіс</span>
+                <h4>IT-офіс у стилі high-tech</h4>
+                <p>120 м² · ТРЦ «Магнолія», Тернопіль</p>
+                <a href="#contact" class="btn btn-sm btn-white">Деталі</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-40 reveal-up">
+        <a href="#contact" class="btn btn-secondary btn-lg">
+          <i class="fas fa-phone"></i>
+          Обговорити ваш проект
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PROCESS
+  ============================== -->
+  <section id="process" class="section section-process">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag section-tag--light">Як ми працюємо</div>
+        <h2 class="section-title section-title--light">5 кроків до ідеального ремонту</h2>
+        <p class="section-subtitle section-subtitle--light">Прозорий процес без сюрпризів</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal-up">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-phone-alt"></i></div>
+            <h3>Заявка</h3>
+            <p>Залишаєте заявку на сайті або телефонуєте. Наш менеджер зв'язується з вами протягом 30 хвилин.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay:0.1s">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-ruler-combined"></i></div>
+            <h3>Замір та консультація</h3>
+            <p>Наш фахівець виїжджає на об'єкт, проводить виміри та безкоштовну консультацію щодо матеріалів.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay:0.2s">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-file-signature"></i></div>
+            <h3>Кошторис і договір</h3>
+            <p>Надаємо детальний кошторис із фіксованою ціною. Підписуємо офіційний договір із гарантіями.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay:0.3s">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-hard-hat"></i></div>
+            <h3>Виконання робіт</h3>
+            <p>Бригада розпочинає роботу в погоджені строки. Щоденні фотозвіти — ви бачите прогрес щодня.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay:0.4s">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-handshake"></i></div>
+            <h3>Здача та гарантія</h3>
+            <p>Спільно приймаємо роботу. Видаємо гарантійний талон на 2 роки. Чистимо після себе повністю.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TESTIMONIALS
+  ============================== -->
+  <section id="testimonials" class="section section-light">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Відгуки</div>
+        <h2 class="section-title">Що кажуть наші клієнти</h2>
+        <p class="section-subtitle">Понад 98% замовників рекомендують нас своїм друзям</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Дуже задоволена ремонтом кухні! Хлопці зробили все акуратно, в строк і без зайвого шуму. Особливо вразила увага до деталей — навіть шов між фартухом та стільницею ідеальний. Рекомендую всім!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--avatar-color:#E8701A">ОК</div>
+            <div class="author-info">
+              <strong>Олена Ковальчук</strong>
+              <span>Ремонт кухні, 2024</span>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:0.1s">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Замовляв комплексний ремонт 2-кімнатної квартири. РемПро не просто виконала роботу — вони підійшли творчо та запропонували кілька рішень, про які я й не думав. Результат перевершив очікування!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--avatar-color:#2E5BA8">МП</div>
+            <div class="author-info">
+              <strong>Михайло Петренко</strong>
+              <span>Комплексний ремонт, 2024</span>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:0.2s">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Ремонт ванної — мрія будь-якої господині! Все що хотіла, навіть тепла підлога і дощовий душ. Прораб Андрій допоміг обрати плитку і не помилитися з кольором. Буду звертатися ще!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--avatar-color:#27AE60">НБ</div>
+            <div class="author-info">
+              <strong>Наталія Бондаренко</strong>
+              <span>Ремонт ванної кімнати, 2023</span>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:0.3s">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Замовляли ремонт офісу. Все зробили за 3 тижні, не заважали роботі — частково і в суботу, і в неділю. Результат — сучасне приміщення, співробітники в захваті. Дуже вдячні команді!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--avatar-color:#8E44AD">ВС</div>
+            <div class="author-info">
+              <strong>Василь Савченко</strong>
+              <span>Ремонт офісу, 2024</span>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:0.4s">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Будували будинок з нуля. Кілька місяців роботи — і ми вже живемо у власному домі! Якість кладки цегли, стяжки та оздоблення — вищий рівень. Окремо дякую прорабу Сергію за комунікацію.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--avatar-color:#E67E22">ІМ</div>
+            <div class="author-info">
+              <strong>Ірина та Олег Мельник</strong>
+              <span>Будівництво будинку, 2023</span>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:0.5s">
+          <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Косметичний ремонт зробили за 10 днів. Швидко, чисто, якісно. Особливо сподобалось, що за собою прибрали — здали квартиру прямо після них. Ціна адекватна, відповідає якості.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--avatar-color:#16A085">АД</div>
+            <div class="author-info">
+              <strong>Андрій Данилюк</strong>
+              <span>Косметичний ремонт, 2024</span>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FAQ
+  ============================== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Часті запитання</h2>
+        <p class="section-subtitle">Відповідаємо на найпоширеніші питання наших клієнтів</p>
+      </div>
+
+      <div class="faq-container reveal-up">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Скільки коштує ремонт квартири у Тернополі?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Вартість залежить від типу ремонту, площі та матеріалів. Орієнтовно: <strong>косметичний ремонт</strong> — від 800 грн/м², <strong>комплексний ремонт</strong> — від 1800 грн/м², <strong>євроремонт</strong> — від 3000 грн/м². Безкоштовний кошторис розробляємо після виїзду фахівця на об'єкт.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Скільки часу займає ремонт?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Строки залежать від обсягу робіт: <strong>косметичний ремонт</strong> однокімнатної квартири — 5–10 днів; <strong>комплексний ремонт</strong> 2-кімнатної квартири — 30–45 днів; <strong>будинок під ключ</strong> — від 3 місяців. Терміни фіксуються у договорі.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Чи надаєте ви гарантію на ремонт?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Так. Ми надаємо офіційну гарантію <strong>2 роки</strong> на всі виконані роботи. Гарантійні зобов'язання прописані в договорі. У разі виникнення дефектів з нашої вини — усуваємо безкоштовно у найкоротші строки.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Чи можна жити в квартирі під час ремонту?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>При косметичному ремонті окремих кімнат — можливо. При комплексному ремонті ми рекомендуємо тимчасово переселитися, оскільки роботи супроводжуються шумом, пилом та хімічними запахами. Ми щільно закриваємо зони робіт захисною плівкою.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Чи закуповуєте ви матеріали?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Так, за бажанням клієнта беремо закупівлю матеріалів на себе. Маємо договори з перевіреними постачальниками та отримуємо знижки, які передаємо клієнту. Альтернативно — клієнт може закупити матеріали самостійно за нашою специфікацією.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Як відбувається оплата?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Оплата поетапна: <strong>30%</strong> — аванс після підписання договору, <strong>50%</strong> — після виконання половини об'єму робіт, <strong>20%</strong> — після приймання об'єкту. Всі розрахунки документально підтверджуються. Готівка або безготівковий переказ.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Чи займаєтесь ви вивозом будівельного сміття?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Так, вивіз будівельного сміття входить до вартості робіт або виконується як окрема послуга. Після здачі об'єкту ми проводимо <strong>будівельне прибирання</strong> — залишаємо квартиру в стані готовності до заселення.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CONTACT
+  ============================== -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag section-tag--light">Контакти</div>
+        <h2 class="section-title section-title--light">Отримайте безкоштовний кошторис</h2>
+        <p class="section-subtitle section-subtitle--light">Залиште заявку і ми зв'яжемося з вами протягом 30 хвилин</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal-up">
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-info-text">
+              <strong>Телефон</strong>
+              <a href="tel:+380501234567">+380 50 123 45 67</a>
+              <a href="tel:+380671234567">+380 67 123 45 67</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fab fa-telegram"></i></div>
+            <div class="contact-info-text">
+              <strong>Telegram</strong>
+              <a href="https://t.me/remprotop" target="_blank" rel="noopener">@remprotop</a>
+              <span>Відповідаємо швидко</span>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <strong>Email</strong>
+              <a href="mailto:info@remontpro.te.ua">info@remontpro.te.ua</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-info-text">
+              <strong>Адреса офісу</strong>
+              <span>вул. Руська, 15, оф. 301</span>
+              <span>м. Тернопіль, 46000</span>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-info-text">
+              <strong>Години роботи</strong>
+              <span>Пн–Пт: 8:00–18:00</span>
+              <span>Сб: 9:00–15:00, Нд: вихідний</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/remprotop" class="social-btn" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-btn" aria-label="Viber"><i class="fab fa-viber"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrapper reveal-up" style="--delay:0.2s">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ваше ім'я *</label>
+                <input type="text" id="name" name="name" placeholder="Іван Іваненко" required autocomplete="name" />
+                <span class="field-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Номер телефону *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX" required autocomplete="tel" />
+                <span class="field-error" id="phone-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Послуга, що цікавить</label>
+              <select id="service" name="service">
+                <option value="">Оберіть послугу...</option>
+                <option value="Комплексний ремонт квартири">Комплексний ремонт квартири</option>
+                <option value="Косметичний ремонт">Косметичний ремонт</option>
+                <option value="Ремонт кухні">Ремонт кухні</option>
+                <option value="Ремонт ванної кімнати">Ремонт ванної кімнати</option>
+                <option value="Будівництво будинку">Будівництво будинку</option>
+                <option value="Фасадні роботи">Фасадні роботи</option>
+                <option value="Комерційне приміщення">Комерційне приміщення</option>
+                <option value="Електромонтажні роботи">Електромонтажні роботи</option>
+                <option value="Сантехнічні роботи">Сантехнічні роботи</option>
+                <option value="Інше">Інше</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="area">Площа об'єкту (м², необов'язково)</label>
+              <input type="number" id="area" name="area" placeholder="Наприклад: 75" min="1" max="10000" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Коментар або побажання</label>
+              <textarea id="message" name="message" rows="4" placeholder="Розкажіть детальніше про ваш об'єкт..."></textarea>
+            </div>
+
+            <div class="form-consent">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span class="checkbox-custom"></span>
+                <span>Погоджуюся на обробку персональних даних</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-secondary btn-lg btn-full" id="submitBtn">
+              <i class="fas fa-paper-plane"></i>
+              <span>Надіслати заявку</span>
+              <span class="btn-loader" style="display:none"><i class="fas fa-spinner fa-spin"></i></span>
+            </button>
+
+            <p class="form-note">
+              <i class="fas fa-lock"></i>
+              Ваші дані захищені та не передаються третім особам
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand footer-brand-logo">
+          <div class="brand-icon"><i class="fas fa-hard-hat"></i></div>
+          <div class="brand-text">
+            <span class="brand-name">РемПро</span>
+            <span class="brand-city">Тернопіль</span>
+          </div>
+        </div>
+        <p>Якісний ремонт квартир, будинків та комерційних приміщень у Тернополі з 2009 року. Гарантія 2 роки.</p>
+        <div class="social-links mt-20">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/remprotop" class="social-btn" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="#" class="social-btn" aria-label="Viber"><i class="fab fa-viber"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Послуги</h4>
+        <ul>
+          <li><a href="#services">Комплексний ремонт</a></li>
+          <li><a href="#services">Косметичний ремонт</a></li>
+          <li><a href="#services">Ремонт ванної</a></li>
+          <li><a href="#services">Ремонт кухні</a></li>
+          <li><a href="#services">Будинки</a></li>
+          <li><a href="#services">Комерційні об'єкти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Компанія</h4>
+        <ul>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#portfolio">Портфоліо</a></li>
+          <li><a href="#process">Як ми працюємо</a></li>
+          <li><a href="#testimonials">Відгуки</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contacts">
+        <h4>Контакти</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+380501234567">+380 50 123 45 67</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fab fa-telegram"></i>
+          <a href="https://t.me/remprotop">@remprotop</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@remontpro.te.ua">info@remontpro.te.ua</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>вул. Руська, 15, Тернопіль</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-clock"></i>
+          <span>Пн–Пт 8:00–18:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2024 РемПро Тернопіль. Всі права захищені.</p>
+        <p>Ремонт квартир та будинків у Тернополі</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <div class="toast-icon" id="toastIcon"></div>
+    <div class="toast-message" id="toastMessage"></div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Повернутися вгору">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/telegram.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
